@@ -89,7 +89,7 @@ async function sendEmail(to, product) {
 
     let mailOptions = {
         from: process.env.EMAIL,
-        to,
+        to:email,
         subject: 'Product Back in Stock!',
         text: `Good news! The product "${product.name}" is now back in stock. Grab it before it runs out again!`
     };
